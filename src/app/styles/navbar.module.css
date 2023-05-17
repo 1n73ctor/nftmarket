@@ -1,0 +1,13 @@
+.nav_item:after {
+  @apply absolute content-[""] w-full h-[3px] origin-right transition-transform duration-[0.5s] scale-x-0 left-0 top-full;
+  background: #5997f3;
+}
+.nav_item:hover:after {
+  @apply origin-left scale-x-100;
+}
+.nav_item {
+  @apply relative block cursor-pointer transition-all duration-[0.2s] ease-[cubic-bezier(.4,0,0.2,1)] hover:text-[#5997f3];
+}
+.nav_item:hover {
+  --tw-text-opacity: 1;
+}

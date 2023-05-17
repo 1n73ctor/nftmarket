@@ -1,0 +1,14 @@
+import React from "react";
+import Image from "next/image";
+
+function NftCard({ src, nftname }) {
+  return (
+    <div className="border solid rounded border-[#14c2a3] m-auto p-3 gap-6 hover:shadow-[#14c2a3_0px_4px_5px,#14c2a3_0px_-3px_7px,#14c2a3_0px_2px_3px,#14c2a3_0px_3px_4px,#14c2a3_0px_-1px_2px]">
+      <Image src={`/${src}`} width={500} height={500} alt="nft image" />
+      <div className="mt-4">
+        <span>{nftname}</span>
+      </div>
+    </div>
+  );
+}
+export default NftCard;
