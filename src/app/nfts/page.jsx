@@ -1,8 +1,8 @@
 import React from "react";
-import HomeNfts from "../pages/Nfts";
+import AllNft from "../pages/Nfts";
 
 function Page() {
-  return <HomeNfts />;
+  return <AllNft />;
 }
 
 export default Page;

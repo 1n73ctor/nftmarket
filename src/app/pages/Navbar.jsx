@@ -24,8 +24,8 @@ function Navabar() {
             <Link href="/" scroll={false}>
               <Image
                 src={"/logo.svg"}
-                width={60}
-                height={60}
+                width={50}
+                height={50}
                 alt="logo"
                 priority
               />
@@ -102,7 +102,7 @@ function Navabar() {
             </div>
           </div>
           <div>
-            <button className="border solid rounded px-3 py-2 hidden md:block hover:bg-white hover:text-[#14c2a3]">
+            <button className="border solid rounded border-[#14c2a3] px-3 py-2 hidden md:block hover:bg-[#14c2a3] font-bold">
               Connect Wallet
             </button>
           </div>

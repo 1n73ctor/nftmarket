@@ -1,11 +1,14 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import dummyData from "../dummy";
 import NftCard from "../components/NftCard";
+import { useRouter } from "next/navigation";
 function Nfts() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
+
+  const route = useRouter();
 
   const fetchItems = async () => {
     setLoading(true);
@@ -33,8 +36,14 @@ function Nfts() {
           <h1 className="text-5xl font-bold">All NFTs</h1>
         </div>
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center items-center">
-          {dummyData.nfts.map((items, index) => (
-            <NftCard key={index.toString()} {...items} />
+          {dummyData.nfts.map((items) => (
+            <NftCard
+              key={items.id.toString()}
+              item={items}
+              onClick={() => {
+                route.push("/nfts/[id]");
+              }}
+            />
           ))}
         </div>
         <div className="flex justify-center items-center mt-8">

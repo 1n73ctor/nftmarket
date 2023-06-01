@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import NftCard from "../components/NftCard";
 import dummyData from "../dummy";
@@ -12,7 +13,13 @@ function NftDetail() {
           key={items.id}
         >
           <div className="basis-1/2 flex justify-center">
-            <NftCard src={items.src} />
+            <NftCard
+              key={items.id}
+              item={items}
+              onClick={() => {
+                console.log("Don't Click");
+              }}
+            />
           </div>
           <div className="basis-1/2 flex flex-col gap-6 mt-2">
             <div className="flex flex-col gap-6">

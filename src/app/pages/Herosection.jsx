@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function Herosection() {
   return (
-    <section className="hero" id="/">
-      <div className="container flex flex-col-reverse md:flex-row m-auto mt-24 text-center md:text-left gap-10 md:gap-15 lg:gap-24 px-4 md:px-0">
+    <section className="hero h-[700px]  bg-cover" id="/">
+      <div className="container flex flex-col-reverse md:flex-row m-auto pt-24 text-center md:text-left gap-10 md:gap-15 lg:gap-24 px-4 md:px-0">
         <div className="flex flex-col basis-1/2 gap-6 justify-center">
           <div className="flex flex-col gap-6">
             <h2 className="text-5xl font-extrabold">
@@ -16,7 +16,7 @@ function Herosection() {
             </p>
           </div>
           <div>
-            <button className="border soild rounded px-4 py-2 border-[#14c2a3] hover:bg-white hover:text-[#14c2a3] font-bold">
+            <button className="border soild rounded px-4 py-2 border-[#14c2a3] hover:bg-[#14c2a3] font-bold">
               Connect Wallet
             </button>
           </div>
@@ -25,7 +25,7 @@ function Herosection() {
           className="basis-1/2 flex justify-center items-center
         "
         >
-          <Image src={"/home01.png"} width={700} height={700} alt="hero img" />
+          <Image src={"/video.gif"} width={900} height={900} alt="hero img" />
         </div>
       </div>
     </section>
