@@ -42,7 +42,7 @@ function Footer() {
             className="cursor-pointer"
           ></Image>
         </div>
-        <div className="flex justify-center">XXX-4023 All rights reserved</div>
+        <div className="flex justify-center">XXX-2023 All rights reserved</div>
       </div>
     </div>
   );

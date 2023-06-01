@@ -82,18 +82,14 @@ function Navabar() {
                 {Nav_Items.map((items, ids) => {
                   if (items.page === "nfts") {
                     return (
-                      <li
-                        key={ids}
-                        className={style.nav_item}
-                        onClick={() => router.push("/nfts")}
-                      >
-                        {items.label}
-                      </li>
+                      <Link href={"/nfts"} key={ids}>
+                        <li className={style.nav_item}>{items.label}</li>
+                      </Link>
                     );
                   } else {
                     return (
                       <li key={ids} className={style.nav_item}>
-                        <a href={"#" + items.page}>{items.label}</a>
+                        <a href={"/#" + items.page}>{items.label}</a>
                       </li>
                     );
                   }

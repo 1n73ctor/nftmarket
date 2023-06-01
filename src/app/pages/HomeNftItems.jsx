@@ -3,6 +3,7 @@ import React from "react";
 import NftCard from "../components/NftCard";
 import dummyData from "../dummy";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 function HomeNftItems() {
   const route = useRouter();
@@ -13,13 +14,9 @@ function HomeNftItems() {
         {dummyData &&
           dummyData.nfts.slice(0, 10).map((item) => {
             return (
-              <NftCard
-                key={item.id}
-                item={item} 
-                onClick={() => {
-                  route.push("/nfts/[id]");
-                }}
-              />
+              <Link href={"/nftitem/" + item.id} key={item.id}>
+                <NftCard item={item} />
+              </Link>
             );
           })}
       </div>

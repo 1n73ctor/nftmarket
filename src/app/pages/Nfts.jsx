@@ -36,12 +36,12 @@ function Nfts() {
           <h1 className="text-5xl font-bold">All NFTs</h1>
         </div>
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center items-center">
-          {dummyData.nfts.map((items) => (
+          {dummyData.nfts.map((items, index) => (
             <NftCard
               key={items.id.toString()}
               item={items}
               onClick={() => {
-                route.push("/nfts/[id]");
+                route.push(`/nftitem/${index}`);
               }}
             />
           ))}
