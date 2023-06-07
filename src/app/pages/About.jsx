@@ -12,7 +12,7 @@ function About() {
           <div className="flex flex-col gap-6">
             <h2 className="text-[#14c2a3] text-lg">About Us</h2>
             <p className="text-white text-4xl font-bold">What is NFT Project</p>
-            <span className="text-xl" contenteditable="true">
+            <span className="text-xl">
               orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

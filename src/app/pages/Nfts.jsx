@@ -3,19 +3,20 @@ import React, { useState, useEffect } from "react";
 import dummyData from "../dummy";
 import NftCard from "../components/NftCard";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 function Nfts() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
 
-  const route = useRouter();
+  // const route = useRouter();
 
   const fetchItems = async () => {
     setLoading(true);
 
     const response = require("../dummy.json");
     const data = response;
-    console.log("work", data);
+    // console.log("work", data);
 
     const itemsPerPage = 5;
     const start = (page - 1) * itemsPerPage;
@@ -36,15 +37,14 @@ function Nfts() {
           <h1 className="text-5xl font-bold">All NFTs</h1>
         </div>
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center items-center">
-          {dummyData.nfts.map((items, index) => (
-            <NftCard
-              key={items.id.toString()}
-              item={items}
-              onClick={() => {
-                route.push(`/nftitem/${index}`);
-              }}
-            />
-          ))}
+          {dummyData &&
+            dummyData.nfts.map((item) => {
+              return (
+                <Link href={"/nftitem/" + item.id} key={item.id}>
+                  <NftCard item={item} />
+                </Link>
+              );
+            })}
         </div>
         <div className="flex justify-center items-center mt-8">
           {loading ? (

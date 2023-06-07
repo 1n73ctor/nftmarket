@@ -1,120 +1,120 @@
 {
   "nfts": [
     {
-      "id": 1,
+      "id": 0,
       "src": "a.jpg",
-      "nftname": "Art",
+      "nftname": "Art 1",
       "amount": "0.5 ETH",
+      "description": "A beautiful piece of artwork."
+    },
+    {
+      "id": 1,
+      "src": "horse01.jpg",
+      "nftname": "Art 2",
+      "amount": "0.7 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 2,
-      "src": "a.jpg",
-      "nftname": "Art2",
-      "amount": "0.5 ETH",
+      "src": "horse02.jpg",
+      "nftname": "Art 3",
+      "amount": "0.508 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 3,
-      "src": "a.jpg",
-      "nftname": "Art3",
-      "amount": "0.5 ETH",
+      "src": "horse03.jpg",
+      "nftname": "Art 4",
+      "amount": "0.15 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 4,
-      "src": "a.jpg",
-      "nftname": "Art4",
-      "amount": "0.5 ETH",
+      "src": "horse04.jpg",
+      "nftname": "Art 5",
+      "amount": "0.67 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 5,
-      "src": "a.jpg",
-      "nftname": "Art5",
-      "amount": "0.5 ETH",
+      "src": "horse05.jpg",
+      "nftname": "Art 6",
+      "amount": "0.78 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 6,
-      "src": "a.jpg",
-      "nftname": "Art6",
-      "amount": "0.5 ETH",
+      "src": "horse06.jpg",
+      "nftname": "Art 7",
+      "amount": "0.1 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 7,
-      "src": "a.jpg",
-      "nftname": "Art7",
-      "amount": "0.5 ETH",
+      "src": "horse07.jpg",
+      "nftname": "Art 8",
+      "amount": "1.05 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 8,
-      "src": "a.jpg",
-      "nftname": "Art8",
-      "amount": "0.5 ETH",
+      "src": "horse08.jpg",
+      "nftname": "Art 9",
+      "amount": "1.23 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 9,
-      "src": "a.jpg",
-      "nftname": "Art",
-      "amount": "0.5 ETH",
+      "src": "horse09.jpg",
+      "nftname": "Art 10",
+      "amount": "2.59 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 10,
-      "src": "a.jpg",
-      "nftname": "Art",
+      "src": "horse10.jpg",
+      "nftname": "Art 11",
       "amount": "0.5 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 11,
-      "src": "a.jpg",
-      "nftname": "Art",
-      "amount": "0.5 ETH",
-      "description": "A beautiful piece of artwork."
+      "src": "horse11.jpg",
+      "nftname": "Art 12",
+      "amount": "0.568 ETH",
+      "description": "A beautiful piece of Art work."
     },
     {
       "id": 12,
-      "src": "a.jpg",
-      "nftname": "Art",
-      "amount": "0.5 ETH",
+      "src": "horse12.jpg",
+      "nftname": "Art 13",
+      "amount": "0.445 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 13,
-      "src": "a.jpg",
-      "nftname": "Art",
-      "amount": "0.5 ETH",
+      "src": "horse13.jpg",
+      "nftname": "Art 14",
+      "amount": "0.65 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 14,
-      "src": "a.jpg",
-      "nftname": "Art",
+      "src": "horse14.jpg",
+      "nftname": "Art 15",
       "amount": "0.5 ETH",
       "description": "A beautiful piece of artwork."
     },
     {
       "id": 15,
-      "src": "a.jpg",
-      "nftname": "Art",
-      "amount": "0.5 ETH",
-      "description": "A beautiful piece of artwork."
-    },
-    {
-      "id": 16,
-      "src": "a.jpg",
+      "src": "horse15.jpg",
       "nftname": "Music",
       "amount": "1 ETH",
       "description": "An exclusive music track."
     },
     {
-      "id": 17,
-      "src": "a.jpg",
+      "id": 16,
+      "src": "horse16.jpg",
       "nftname": "Collectibles",
       "amount": "0.2 ETH",
       "description": "A rare collectible item."
