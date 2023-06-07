@@ -2,34 +2,42 @@
 import React, { useState, useEffect } from "react";
 import dummyData from "../dummy";
 import NftCard from "../components/NftCard";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
+
+const PER_PAGE_ITEMS = 18;
+
 function Nfts() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
 
-  // const route = useRouter();
+  ////////// API DATA ///////////////
+
+  const APIdata = require("../dummy.json");
+  const totalItems = Math.ceil(APIdata.nfts.length / PER_PAGE_ITEMS);
+
+  const apiData = () =>
+    new Promise((resolve, reject) => {
+      const apiRes = APIdata.nfts.slice(0, page * PER_PAGE_ITEMS);
+      setTimeout(() => {
+        resolve(apiRes);
+      }, 1000);
+    });
 
   const fetchItems = async () => {
-    setLoading(true);
-
-    const response = require("../dummy.json");
-    const data = response;
-    // console.log("work", data);
-
-    const itemsPerPage = 5;
-    const start = (page - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
-
-    setItems((prevItems) => [...prevItems, ...data.nfts.slice(start, end)]);
-    setPage((prevPage) => prevPage + 1);
-    setLoading(false);
+    try {
+      setLoading(true);
+      const resData = await apiData();
+      setItems(resData);
+    } catch (error) {
+    } finally {
+      setLoading(false);
+    }
   };
 
-  // useEffect(() => {
-  //   fetchItems();
-  // }, [page]);
+  useEffect(() => {
+    fetchItems();
+  }, [page]);
   return (
     <section className="nft flex" id="nfts">
       <div className="container md:basis-1/2 m-auto mt-16 px-4 md:px-0">
@@ -37,10 +45,10 @@ function Nfts() {
           <h1 className="text-5xl font-bold">All NFTs</h1>
         </div>
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-5 justify-center items-center">
-          {dummyData &&
-            dummyData.nfts.map((item) => {
+          {items &&
+            items.map((item, index) => {
               return (
-                <Link href={"/nftitem/" + item.id} key={item.id}>
+                <Link key={index} href={"/nftitem/" + (item.id + 1)}>
                   <NftCard item={item} />
                 </Link>
               );
@@ -48,13 +56,19 @@ function Nfts() {
         </div>
         <div className="flex justify-center items-center mt-8">
           {loading ? (
-            <p>Loading...</p>
+            <button className="border solid border-[#14c2a3] hover:bg-[#14c2a3] hover:text-white rounded px-4 py-2">
+              Loading...
+            </button>
           ) : (
             <button
-              onClick={fetchItems}
+              onClick={() =>
+                setPage((old) => (totalItems >= old ? old + 1 : old))
+              }
               className="border solid border-[#14c2a3] hover:bg-[#14c2a3] hover:text-white rounded px-4 py-2"
             >
-              Load More
+              {items.length == APIdata.nfts.length
+                ? "No more data"
+                : "Load More"}
             </button>
           )}
         </div>

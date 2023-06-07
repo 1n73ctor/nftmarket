@@ -2,7 +2,7 @@
   "nfts": [
     {
       "id": 0,
-      "src": "a.jpg",
+      "src": "horse.jpg",
       "nftname": "Art 1",
       "amount": "0.5 ETH",
       "description": "A beautiful piece of artwork."

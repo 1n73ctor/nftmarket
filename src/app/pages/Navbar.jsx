@@ -20,12 +20,12 @@ function Navabar() {
     <section className="navbar">
       <nav className="w-full text-[white] bg-[#141a31]">
         <div className="justify-between px-4 py-3 mx-auto md:items-center md:flex md:px-12">
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <div className="flex items-center justify-between md:block">
             <Link href="/" scroll={false}>
               <Image
-                src={"/logo.svg"}
-                width={50}
-                height={50}
+                src={"/logo.png"}
+                width={100}
+                height={100}
                 alt="logo"
                 priority
               />

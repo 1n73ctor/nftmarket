@@ -2,7 +2,6 @@
 import React from "react";
 import NftCard from "../components/NftCard";
 import dummy from "../dummy";
-// import { useParams } from "react-router-dom";
 
 function NftDetail({ index }) {
   const items = dummy.nfts[index];
@@ -13,13 +12,7 @@ function NftDetail({ index }) {
         key={items.id}
       >
         <div className="basis-1/2 flex justify-center">
-          <NftCard
-            key={items.id}
-            item={items}
-            // onClick={() => {
-            //   console.log("Don't Click");
-            // }}
-          />
+          <NftCard key={items.id} item={items} />
         </div>
         <div className="basis-1/2 flex flex-col gap-6 mt-2">
           <div className="flex flex-col gap-6">
@@ -36,7 +29,7 @@ function NftDetail({ index }) {
             </span>
           </div>
           <div>
-            <button className="border solid border-[#14c2a3] px-4 py-2">
+            <button className="border solid border-[#14c2a3] px-4 py-2 hover:bg-[#14c2a3] rounded font-bold">
               Buy Now
             </button>
           </div>
