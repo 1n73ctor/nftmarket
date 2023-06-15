@@ -1,11 +1,11 @@
-@media (min-width: 1200px) {
-  .roadmap__item {
+
+  .roadmap_item {
     position: relative;
     padding-left: 40px;
     padding-bottom: 40px;
   }
 
-  .roadmap__item:after {
+  .roadmap_item:after {
     content: "";
     position: absolute;
     bottom: -25px;
@@ -15,21 +15,21 @@
     border-left: 2px dashed #00b0ba;
   }
 
-  .roadmap__item_title {
-    color: #1416c2;
+  .roadmap_item_title {
+    color: #14c2a3;
     font-size: 16px;
     font-family: Raleway;
     font-weight: 700;
     margin-bottom: 10px;
   }
 
-  .roadmap__item_text {
+  .roadmap_item_text {
     font-size: 16px;
-    color: #ee0606;
+    color: #14c2a3;
     line-height: 20px;
   }
 
-  .roadmap__item_marker {
+  .roadmap_item_marker {
     position: absolute;
     top: 0;
     left: 0;
@@ -42,17 +42,17 @@
     background-color: #fff;
   }
 
-  .roadmap__item:last-child:after {
+  .roadmap_item:last-child:after {
     display: none;
   }
 
-  .roadmap__item--active .roadmap__item_marker {
+  .roadmap_item_active .roadmap_item_marker {
     width: 30px;
     height: 30px;
     left: -2.5px;
   }
 
-  .roadmap__itemactive .roadmap__item_marker:after {
+  .roadmap_item_active .roadmap_item_marker:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -67,11 +67,11 @@
     transform: translate(-50%, -50%);
   }
 
-  .roadmap__item__past .roadmap__item_marker {
+  .roadmap_item_past .roadmap_item_marker {
     border: 2px solid #f2718b;
   }
 
-  .roadmap__item__past .roadmap__item_marker:after {
+  .roadmap_item_past .roadmap_item_marker:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -86,7 +86,7 @@
     transform: translate(-50%, -50%);
   }
 
-  .roadmap__item__past:after {
+  .roadmap_item_past:after {
     width: 2px;
     border: none;
     background-image: -webkit-gradient(
@@ -105,8 +105,8 @@
     .map {
       padding-bottom: 40px;
     }
-    .map__figure-1,
-    .map__figure-2 {
+    .map_figure-1,
+    .map_figure-2 {
       display: block;
     }
     .roadmap {
@@ -118,40 +118,39 @@
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
     }
-    .roadmap__item {
+
+    .roadmap_item {
       width: -webkit-calc(50% - 15px);
       width: calc(50% - 15px);
-    }
-    .roadmap__item {
       text-align: center;
       margin-bottom: 60px;
       padding-bottom: 0;
     }
-    .roadmap__item:after {
+    .roadmap_item:after {
       width: 100%;
       border: none;
       border-top: 1px dashed #557ef8;
       top: 65px;
       border: auto;
-      right: -50%;
+      right: -50%; 
       height: 2px;
       -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
       transform: translateX(50%);
     }
-    .roadmap__item:nth-child(2n):after {
+    .roadmap_item:nth-child(2n):after {
       display: none;
     }
-    .roadmap__item_title {
+    .roadmap_item_title {
       margin-bottom: 24px;
     }
-    .roadmap__item_marker {
+    .roadmap_item_marker {
       position: relative;
       top: 0;
       left: 0;
       margin: 0 auto 80px;
     }
-    .roadmap__item_marker:before {
+    .roadmap_item_marker:before {
       content: "";
       position: absolute;
       top: 35px;
@@ -163,7 +162,7 @@
       height: 50px;
       background-color: rgba(182, 183, 183, 0.5);
     }
-    .roadmap__item__past:after {
+    .roadmap_item_past:after {
       top: 64px;
       background-image: -webkit-gradient(
         linear,
@@ -182,37 +181,36 @@
     .map {
       padding-bottom: 90px;
     }
-    .map__bg {
+    .map_bg {
       display: block;
     }
-    .roadmap__item {
+    .roadmap_item {
       width: -webkit-calc(33.3333% - 15px);
       width: calc(33.3333% - 15px);
     }
-    .roadmap__item:nth-child(2n):after {
+    .roadmap_item:nth-child(2n):after {
       display: block;
     }
-    .roadmap__item:nth-child(3n):after {
+    .roadmap_item:nth-child(3n):after {
       display: none;
     }
-    .roadmap__item:last-child:after {
+    .roadmap_item:last-child:after {
       display: none;
     }
   }
 
   @media (min-width: 992px) {
-    .roadmap__item {
+    .roadmap_item {
       width: -webkit-calc(20% - 15px);
       width: calc(20% - 15px);
     }
-    .roadmap__item:nth-child(5n):after {
+    .roadmap_item:nth-child(5n):after {
       display: none;
     }
-    .roadmap__item:nth-child(3n):after {
+    .roadmap_item:nth-child(3n):after {
       display: block;
     }
-    .roadmap__item:last-child:after {
+    .roadmap_item:last-child:after {
       display: none;
     }
   }
-}

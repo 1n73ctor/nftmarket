@@ -11,9 +11,9 @@ const Tokenomics = () => {
   return (
     <section className="tokenomics container m-auto mt-24">
       <div className="my-10">
-        <h1 className="before:content-['--'] text-[#14c2a3] text-lg">
+        <h2 className="before:content-['--'] text-[#14c2a3] text-lg">
           Tokenomics
-        </h1>
+        </h2>
       </div>
       <div className="lg:flex">
         <div className={style.div_style}>
@@ -37,8 +37,8 @@ const Tokenomics = () => {
           </p>
         </div>
       </div>
-      <div className="w-full mx-auto flex my-24 justify-evenly">
-        <div className="flex flex-col gap-4 mx-auto basis-1/2 px-10 items-center">
+      <div className="w-full mx-auto flex flex-col md:flex-row my-24 ">
+        <div className="flex flex-col gap-4 basis-1/2 px-2 md:px-10 items-center">
           <div className="w-full px-10 flex mx-auto justify-between">
             <p>Name : </p>
             <p>Horse Mania </p>
@@ -64,7 +64,7 @@ const Tokenomics = () => {
             <p>Horse Mania </p>
           </div>
         </div>
-        <div className="flex basis-1/2 items-center justify-center">
+        <div className="hidden md:flex basis-1/2 items-center justify-center">
           <Image src={"/logo.png"} width={200} height={200} alt="Logo"></Image>
         </div>
       </div>
