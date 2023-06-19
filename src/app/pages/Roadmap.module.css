@@ -33,8 +33,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border: 2px solid #00b0ba;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -69,6 +69,11 @@
 
   .roadmap_item_past .roadmap_item_marker {
     border: 2px solid #f2718b;
+    width: 30px;
+    height: 30px;
+
+
+    
   }
 
   .roadmap_item_past .roadmap_item_marker:after {
@@ -101,7 +106,7 @@
     background-image: linear-gradient(to bottom, #fe5ab0 0, #00b0ba 100%);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     .map {
       padding-bottom: 40px;
     }
@@ -146,6 +151,8 @@
     }
     .roadmap_item_marker {
       position: relative;
+      width: 30px;
+      height: 30px;
       top: 0;
       left: 0;
       margin: 0 auto 80px;
@@ -177,7 +184,7 @@
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .map {
       padding-bottom: 90px;
     }
@@ -201,8 +208,8 @@
 
   @media (min-width: 992px) {
     .roadmap_item {
-      width: -webkit-calc(20% - 15px);
-      width: calc(20% - 15px);
+      width: -webkit-calc(25% - 15px);
+      width: calc(25% - 15px);
     }
     .roadmap_item:nth-child(5n):after {
       display: none;

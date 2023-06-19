@@ -3,13 +3,13 @@ import styles from "./Roadmap.module.css";
 
 const Roadmap = () => {
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto px-4 md:px-0">
       <div className="my-10">
         <h1 className="before:content-['--'] text-[#14c2a3] text-lg">
           Our Roadmap
         </h1>
       </div>
-      <div className={styles.roadmap}>
+      <div className={styles.roadmap} data-aos="zoom-in">
         <div
           className={`${styles.roadmap_item} ${styles.roadmap_item_past}`}
         >

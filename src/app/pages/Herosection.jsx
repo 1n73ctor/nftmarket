@@ -5,7 +5,10 @@ function Herosection() {
   return (
     <section className="hero h-[700px]  bg-cover" id="/">
       <div className="container flex flex-col-reverse md:flex-row m-auto pt-36 text-center md:text-left gap-10 md:gap-15 lg:gap-24 px-4 md:px-0">
-        <div className="flex flex-col basis-1/2 gap-6 justify-center">
+        <div
+          className="flex flex-col basis-1/2 gap-6 justify-center"
+          data-aos="fade-right"
+        >
           <div className="flex flex-col gap-6">
             <h2 className="text-5xl font-extrabold">
               CRYPTO NFT COLLECTIONS FOR EVERYONE
@@ -24,6 +27,7 @@ function Herosection() {
         <div
           className="basis-1/2 flex justify-center items-center
         "
+          data-aos="fade-left"
         >
           <Image src={"/video.gif"} width={900} height={900} alt="hero img" />
         </div>

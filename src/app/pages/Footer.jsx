@@ -4,7 +4,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <div className="footer bg-[#141a31] mt-24 left-0 bottom-0">
-      <div className="container m-auto flex flex-col justify-center py-6">
+      <div className="container m-auto flex flex-col justify-center py-6" data-aos="fade-down"> 
         <div className="flex justify-center gap-1">
           <Image
             src={"twitter.svg"}
