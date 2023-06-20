@@ -4,7 +4,7 @@ import Image from "next/image";
 function Herosection() {
   return (
     <section className="hero h-[700px]  bg-cover" id="/">
-      <div className="container flex flex-col-reverse md:flex-row m-auto pt-36 text-center md:text-left gap-10 md:gap-15 lg:gap-24 px-4 md:px-0">
+      <div className="container flex flex-col-reverse md:flex-row m-auto pt-36 text-center md:text-left gap-10 md:gap-15 lg:gap-24 px-4 lg:px-0">
         <div
           className="flex flex-col basis-1/2 gap-6 justify-center"
           data-aos="fade-right"

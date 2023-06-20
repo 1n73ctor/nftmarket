@@ -40,7 +40,7 @@ function Nfts() {
   }, [page]);
   return (
     <section className="nft flex" id="nfts">
-      <div className="container md:basis-1/2 m-auto mt-16 px-4 md:px-0">
+      <div className="container md:basis-1/2 m-auto mt-16 px-4 lg:px-0">
         <div className="mb-16 flex items-center justify-center">
           <h1 className="text-5xl font-bold">All NFTs</h1>
         </div>

@@ -16,7 +16,7 @@
   }
 
   .roadmap_item_title {
-    color: #14c2a3;
+    color: #fff;
     font-size: 16px;
     font-family: Raleway;
     font-weight: 700;
@@ -25,7 +25,7 @@
 
   .roadmap_item_text {
     font-size: 16px;
-    color: #14c2a3;
+    color: #fff;
     line-height: 20px;
   }
 
@@ -184,7 +184,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .map {
       padding-bottom: 90px;
     }
