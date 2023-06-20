@@ -9,7 +9,7 @@ const Tokenomics = () => {
       "absolute lg:-translate-x-2/4 lg:left-2/4 bottom-[-35px] lg:-bottom-20 whitespace-nowrap",
   };
   return (
-    <section className="tokenomics container m-auto mt-24 px-4 md:px-0">
+    <section className="tokenomics container m-auto mt-24 px-4 md:px-0 transition-transform duration-[5.0s] ease-[ease-in-out] scroll-smooth" id="tokenomics">
       <div className="my-10">
         <h2 className="before:content-['--'] text-[#14c2a3] text-lg">
           Tokenomics

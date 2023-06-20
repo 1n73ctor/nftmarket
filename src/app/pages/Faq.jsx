@@ -2,7 +2,7 @@ import React from "react";
 
 function Faq() {
   return (
-    <section className="faq text-[#f5f5f5]" id="faq">
+    <section className="faq text-[#f5f5f5] transition-transform duration-[1.0s] ease-[ease-in-out]" id="faq">
       <div className="container flex flex-col justify-center mx-auto mt-24 px-4 md:px-0">
         <p
           data-aos="fade-down"

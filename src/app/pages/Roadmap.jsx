@@ -3,7 +3,7 @@ import styles from "./Roadmap.module.css";
 
 const Roadmap = () => {
   return (
-    <section className="container mx-auto px-4 md:px-0">
+    <section className="container mx-auto px-4 md:px-0 transition-transform duration-[1.0s] ease-[ease-in-out]">
       <div className="my-10">
         <h1 className="before:content-['--'] text-[#14c2a3] text-lg">
           Our Roadmap

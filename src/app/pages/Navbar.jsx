@@ -9,7 +9,7 @@ const Nav_Items = [
   { label: "About", page: "about" },
   { label: "NFT", page: "nfts" },
   { label: "FAQ", page: "faq" },
-  { label: "Contact Us", page: "contactus" },
+  { label: "Tokenomics", page: "tokenomics" },
 ];
 
 function Navabar() {

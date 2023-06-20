@@ -6,7 +6,7 @@ import Link from "next/link";
 function About() {
   const router = useRouter();
   return (
-    <section className="about mt-24" id="about">
+    <section className="about mt-24 transition-transform duration-[1.0s] ease-[ease-in-out]" id="about">
       <div className="container flex flex-col md:flex-row m-auto text-center md:text-left gap-10 md:gap-15 lg:gap-24">
         <div className="basis-1/2 flex flex-col gap-6 px-4 md:px-0" data-aos="fade-right">
           <div className="flex flex-col gap-6">
