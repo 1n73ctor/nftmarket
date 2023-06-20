@@ -136,7 +136,7 @@
       border: none;
       border-top: 1px dashed #557ef8;
       top: 65px;
-      border: auto;
+      /* border: auto; */
       right: -50%; 
       height: 2px;
       -webkit-transform: translateX(50%);
@@ -206,7 +206,7 @@
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     .roadmap_item {
       width: -webkit-calc(25% - 15px);
       width: calc(25% - 15px);
